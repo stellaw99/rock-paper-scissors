@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: noto, serif;
+    display: flex;
+    margin: 1em;
+    background-color: rgb(242, 242, 242);
+    color: darkgoldenrod;
+}
+h1 {
+    color: brown;
+    margin-bottom: 0.7em;
+    font-weight: normal;
+}
+h2 {
+    margin-bottom: 0.5em;
+    font-weight: normal;
+}
+button {
+    background-color: brown;
+    padding: 0.5em 0.7em;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    margin-top: 0.7em;
+    margin-right: 0.5em;
+    font-family: noto, serif;
+    font-weight: normal;
+    font-size: 0.9rem;
+
+}
+
+
+
