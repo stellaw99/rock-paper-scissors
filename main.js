@@ -31,6 +31,9 @@ function generateComputerChoice() {
 function getResult() {
     if (computerChoice === userChoice) {
         result = 'its a draw!'
+        { var col=document.getElementById("demo");
+            col.style.color = "brown";
+        }
         // result.style.color = 'brown'
     }
     if (computerChoice === 'rock' && userChoice === 'paper') {
