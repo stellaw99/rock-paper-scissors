@@ -5,31 +5,31 @@
 }
 
 body {
-    font-family: noto, serif;
+    font-family: poppins, sans-serif;
     display: flex;
     margin: 1em;
     background-color: rgb(242, 242, 242);
-    color: darkgoldenrod;
+    color: rgb(88, 88, 88);
 }
 h1 {
-    color: brown;
+    color: rgb(26, 159, 55);
     margin-bottom: 0.7em;
-    font-weight: normal;
+    font-weight: 600;
 }
 h2 {
     margin-bottom: 0.5em;
-    font-weight: normal;
+    font-weight: 300;
 }
 button {
     background-color: brown;
-    padding: 0.5em 0.7em;
+    padding: 0.5em 0.9em;
     border-radius: 5px;
     border-style: none;
     color: white;
     margin-top: 0.7em;
-    margin-right: 0.5em;
-    font-family: noto, serif;
-    font-weight: normal;
+    margin-right: 0.7em;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
     font-size: 0.9rem;
 
 }

@@ -20,13 +20,16 @@ function generateComputerChoice() {
   const randomNumber = Math.floor(Math.random() * 3) + 1;
 
   if (randomNumber === 1) {
-    computerChoice = 'rock';
+      computerChoice = 'rock';
+      computerChoiceDisplay.style.color = 'brown'
   }
   if (randomNumber === 2) {
-    computerChoice = 'paper';
+      computerChoice = 'paper';
+      computerChoiceDisplay.style.color = 'brown'
   }
   if (randomNumber === 3) {
-    computerChoice = 'scissors';
+      computerChoice = 'scissors';
+      computerChoiceDisplay.style.color = 'brown'
   }
   computerChoiceDisplay.innerHTML = computerChoice;
 }
@@ -42,32 +45,41 @@ function getResult() {
 //   }
 
   if (computerChoice === userChoice) {
-    result = 'its a draw!';
-    resultDisplay.style.color = 'brown';
+      result = 'its a draw!';
+      userChoiceDisplay.style.color = 'darkgoldenrod'
+      resultDisplay.style.color = 'green';
+    //   resultDisplay.text.bold = 'green';
+
   }
   if (computerChoice === 'rock' && userChoice === 'paper') {
-    result = 'You Win!';
+      result = 'YAY You Win :)';
+      userChoiceDisplay.style.color = 'darkgoldenrod'
     resultDisplay.style.color = 'green';
   }
   if (computerChoice === 'rock' && userChoice === 'scissors') {
-    result = 'You Lose!';
-    resultDisplay.style.color = 'red';
+      result = 'Boo You Lose :(';
+      userChoiceDisplay.style.color = 'darkgoldenrod'
+    resultDisplay.style.color = 'brown';
   }
   if (computerChoice === 'paper' && userChoice === 'scissors') {
-    result = 'You Win!';
-    resultDisplay.style.color = 'pink';
+      result = 'YAY You Win :)';
+      userChoiceDisplay.style.color = 'darkgoldenrod'
+    resultDisplay.style.color = 'green';
   }
   if (computerChoice === 'paper' && userChoice === 'rock') {
-    result = 'You Lose!';
-    resultDisplay.style.color = 'blue';
+      result = 'Boo You Lose :(';
+      userChoiceDisplay.style.color = 'darkgoldenrod'
+    resultDisplay.style.color = 'brown';
   }
   if (computerChoice === 'scissors' && userChoice === 'paper') {
-    result = 'You Lose!';
+      result = 'Boo You Lose :(';
+      userChoiceDisplay.style.color = 'darkgoldenrod'
     resultDisplay.style.color = 'brown';
   }
   if (computerChoice === 'scissors' && userChoice === 'rock') {
-    result = 'You Win!';
-    resultDisplay.style.color = 'brown';
+      result = 'YAY You Win :)';
+      userChoiceDisplay.style.color = 'darkgoldenrod'
+    resultDisplay.style.color = 'green';
   }
   resultDisplay.innerHTML = result;
 }
